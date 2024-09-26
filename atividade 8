@@ -1,0 +1,24 @@
+#include <stdio.h> {
+ int main() {
+     char str[100]; // Declara uma string com um tamanho máximo de 99 caracteres + 1 para o terminador nulo
+     int i = 0;
+
+     // Lê a string do usuário
+     printf("Digite uma string: ");
+     fgets(str, sizeof(str), stdin);
+
+     // Calcula o tamanho da string
+     while (str[i] != '\0') {
+         i++;
+     }
+
+     // Subtrai 1 se o último caractere for o terminador nulo ou nova linha
+     if (str[i - 1] == '\n') {
+         i--;
+     }
+
+     // Exibe o tamanho da string
+     printf("A string possui %d caracteres.\n", i);
+
+     return 0;
+ }
