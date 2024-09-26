@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main (){
+    int a,b;
+    printf ("Digite um numero ");
+    scanf ("%d",&a);
+    printf("Digite um numero ");
+    scanf ("%d",&b);
+
+    if (a>b){
+    a=a-b;
+    printf ("A diferenca dos numeros digitados: %d",a);
+    }
+
+    else {
+    a=b-a;
+    printf("A diferenca dos numeros digitados: %d",a);
+
+    }
+
+
+
+
+return (0);
+}
